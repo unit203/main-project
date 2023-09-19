@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: Gilroyextrabold;
   font-display: swap;
@@ -47,6 +48,49 @@
   font-weight: 400;
   font-style: normal;
 }
+/** Обнуление */
+body {
+  width: 100%;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually_hidden:not(:active),
+input[type=checkbox].visually_hidden,
+input[type=radio].visually_hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .body {
   min-width: 375px;
   background-color: #28262B;
@@ -404,19 +448,44 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    display: block;
     background-color: transparent;
+    min-width: 240px;
     border: none;
   }
   .main-nav__button p {
+    display: block;
+    margin: 0;
+    padding: 0;
     font-size: 20px;
     font-weight: 600;
+    letter-spacing: -0.6px;
     color: rgb(45, 240, 13);
   }
 }
 .main-nav__button .main-nav__button-img {
-  display: block;
-  width: 34px;
-  height: 34px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
   background-color: rgb(45, 240, 13);
+}
+.main-nav__button .main-nav__button-img span:first-child {
+  position: relative;
+  display: block;
+  width: 16px;
+  height: 2px;
+  background-color: #000000;
+}
+.main-nav__button .main-nav__button-img span:first-child::before {
+  content: "";
+  position: absolute;
+  top: -7px;
+  left: 7px;
+  width: 2px;
+  height: 16px;
+  background-color: #000000;
 }

@@ -15,7 +15,7 @@
 // @import 'config/mixins';
 // @import 'config/patternSelectors';
 
-// /** Обнуление */
+/** Обнуление */
 // @import 'config/reset';
 
 // /**
@@ -50,6 +50,8 @@
 // @import 'components/accordion';
 // @import 'components/footer';
 @import "config/variables";
+@import "config/global";
+// @import "global/global.scss";
 
 @import "components/body";
 @import "components/header";
@@ -64,4 +66,3 @@
 
 
 // @import "global/fonts.scss";
-// @import "global/global.scss";

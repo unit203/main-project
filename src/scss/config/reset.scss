@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   border: 0;
-  -webkit-tap-highlight-color: transparent;
+  // -webkit-tap-highlight-color: transparent;
 
   &,
   &:before,
@@ -42,7 +42,7 @@ html,
 body {
   width: 100%;
   height: 100%;
-  min-width: $minWidth + px;
+  // min-width: $minWidth + px;
 }
 
 body {
@@ -53,8 +53,8 @@ body {
   line-height: var(--bs-line-height);
   text-rendering: optimizelegibility;
   text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
+  // -moz-osx-font-smoothing: grayscale;
+  // -webkit-font-smoothing: antialiased;
 }
 
 input,
@@ -68,7 +68,7 @@ input::-ms-clear {
 }
 
 input[type="number"] {
-  -moz-appearance: textfield;
+  // -moz-appearance: textfield;
 
   &::-webkit-outer-spin-button,
   &::-webkit-inner-spin-button {
