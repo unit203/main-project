@@ -1,0 +1,18 @@
+.header {
+  min-width: $mobile_min;
+  min-height: 60px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  background-color: $bg_second_color;
+  background-color: rgb(3, 33, 3);
+
+  @media (min-width: $tablet_min) {
+    // min-height: 50px;
+    // margin: 0 0 10px -10px;
+  }
+}
+
+

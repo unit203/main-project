@@ -1,0 +1,21 @@
+.DS_Store
+.idea
+.vscode
+*.ai
+*.log
+*.pdf
+*.psd
+*.sublime*
+npm-debug.*
+Thumbs.db
+notes.txt
+.run
+notes.md
+READMEALL.md
+node_modules/
+# tasks/
+# config/
+# gulp/
+# webpack.config.js
+# package.json
+# src/
