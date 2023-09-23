@@ -10,19 +10,21 @@
 // import AOS from 'aos'
 // import Swiper, { Navigation, Pagination } from 'swiper';
 
-import BaseHelpers from './helpers/BaseHelpers.js';
-import PopupManager from './modules/PopupManager';
-import BurgerMenu from './modules/BurgerMenu';
-import Tabs from './modules/Tabs';
-import Accordion from './modules/Accordion.js';
+// import BaseHelpers from './helpers/BaseHelpers.js';
+// import PopupManager from './modules/PopupManager';
+// import BurgerMenu from './modules/BurgerMenu';
+// import Tabs from './modules/Tabs';
+// import Accordion from './modules/Accordion.js';
 
-BaseHelpers.checkWebpSupport();
+// BaseHelpers.checkWebpSupport();
 
-BaseHelpers.addTouchClass();
+// BaseHelpers.addTouchClass();
 
-BaseHelpers.addLoadedClass();
+// BaseHelpers.addLoadedClass();
 
-BaseHelpers.headerFixed();
+// BaseHelpers.headerFixed();
+
+
 
 /**
  * Открытие/закрытие модальных окон
@@ -33,12 +35,12 @@ BaseHelpers.headerFixed();
  * На обертку(.popup) окна добавь атрибут '[data-close-overlay]'
  * На кнопку для закрытия окна добавь класс '.button-close'
  * */
-new PopupManager();
+// new PopupManager();
 
 /**
  *  Модуль для работы с меню (Бургер)
  * */
-new BurgerMenu().init();
+// new BurgerMenu().init();
 
 /**
  *  Библиотека для анимаций
@@ -51,14 +53,17 @@ new BurgerMenu().init();
  * */
 // new MousePRLX();
 
-new Tabs('tabs-example', {
-	onChange: (data) => {
-		console.log(data);
-	},
-});
+// new Tabs('tabs-example', {
+// 	onChange: (data) => {
+// 		console.log(data);
+// 	},
+// });
 
-new Accordion('.accordion', {
-	shouldOpenAll: false, // true
-	defaultOpen: [], // [0,1]
-	collapsedClass: 'open',
-});
+// new Accordion('.accordion', {
+// 	shouldOpenAll: false, // true
+// 	defaultOpen: [], // [0,1]
+// 	collapsedClass: 'open',
+// });
+
+import "./castom/close-menu.js";
+

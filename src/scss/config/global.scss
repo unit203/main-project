@@ -1,14 +1,35 @@
+html {
+  box-sizing: border-box;
+  // font-size: calc(100vw / 375 * 16);
+  @media (min-width: $tablet_min) {
+    // font-size: 10px;
+    font-size: calc(100vw / 1920 * 16);
+
+  }
+}
+
+
+
+
+
+
 body {
   width: 100%;
   font-family: $font;
-  font-size: 14px;
+  // font-size: 14px;
   font-weight: 400;
   margin: 0;
+
+  @media (min-width: $tablet_min) {
+    // font-size: 2.4rem;
+    // font-size: 10px;
+
+  }
 }
 
-html {
-  box-sizing: border-box;
-}
+
+
+
 
 *,
 *::before,

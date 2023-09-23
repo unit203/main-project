@@ -1,4 +1,10 @@
-$font: "OpenSans", "Arial", sans-serif;
+$font: "gilroy", "Arial", sans-serif;
+$font-gb: "Gilroyextrabold", "Arial", sans-serif;
+$font-gl: "Gilroylight", "Arial", sans-serif;
+
+
+
+
 $tablet_max: 1023px;
 $tablet_min: 768px;
 $mobile_min: 375px;
@@ -6,7 +12,12 @@ $mobile_min: 375px;
 $bg_main_color: #28262B;
 $bg_second_color: #000000;
 $bg_third_color: #F3F6F9;
+
+$btn_desk_form: rgba(33, 56, 135, 0.6);
 $text_main_color: #F46A0F;
+$text_main_color: #F46A0F;
+
+
 $text_second_color: #747588;
 $text_third_color: rgba(45, 240, 13, 1);
 
@@ -14,12 +25,21 @@ $text_third_color: rgba(45, 240, 13, 1);
 
 $text_fourth_color: #0071e3;
 $text_five_color: #7e7f86;
+$border_first: #B2B1B3;
+$border_second: #F46A0F;
+
+
 $border_50: rgba(245, 99, 0, 0.5);
 $border_100: rgba(245, 99, 0, 1);
 
 
+@media (min-width: $tablet_min) {
 
-// $bg_main_color: #000000;
+}
+
+$bg_button_color_first: #343236;
+// $bg_button_color_second: rgba(33, 56, 135, 0.06);
+$bg_button_color_second: rgba(33, 56, 135);
 // $bg_second_color: #333333;
 // $bg_third_color: #1d1d1f;
 // $text_main_color: #f2f2f2;

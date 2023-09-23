@@ -21,8 +21,11 @@
   min-width: 335px;
   // margin-top: 1px;
   // margin-bottom: 5px;
-  background-color: rgb(23, 7, 144);
+  // background-color: rgb(23, 7, 144);
+  border-bottom: 1px solid $border_first;
+
   @media (min-width: $tablet_min) {
+    border: none;
     min-width: fit-content;
     // display: none;
   }
@@ -35,12 +38,12 @@
   align-items: center;
   flex-wrap: wrap;
   min-height: 60px;
-  background-color: orange;
+  // background-color: orange;
 }
 
 .main-nav__logo-wrapper {
 
-  background-color: yellow;
+  // background-color: yellow;
 }
 
 .main-nav__logo-text {
@@ -50,9 +53,9 @@
   text-align: center;
   text-transform: uppercase;
   margin-left: 5px;
+  color: $text_main_color;
 
-
-  background-color: orangered;
+  // background-color: orangered;
 }
 
 .main-nav__switch {
@@ -384,7 +387,7 @@
   padding-left: 28px;
   // color: $text_third_color;
   // background-color: black;
-  background-image: url(/img/icon-whatsapp-nav.svg);
+  background-image: url(/images/icon-whatsapp-nav.svg);
   // background-image: url(/img/icon-arrow.svg);
 }
 
@@ -392,7 +395,7 @@
   padding-left: 28px;
   // color: $text_third_color;
   // background-color: black;
-  background-image: url(/img/icon-telegram-nav.svg);
+  background-image: url(/images/icon-telegram-nav.svg);
 }
 
 .main-nav__contact-place-email {

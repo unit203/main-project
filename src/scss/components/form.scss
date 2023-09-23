@@ -1,0 +1,347 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  // padding: 1.2rem;
+
+  @media (min-width: $tablet_min) {
+    flex-direction: row;
+    justify-content: start;
+    // flex-wrap: nowrap;
+    align-items: start;
+    padding-top: 7.75rem;
+    padding-bottom: 7.3125rem;
+    max-width: 91.1875rem;
+    min-height: 12.75rem;
+  }
+
+  // background-color: rgb(3, 3, 43);
+}
+
+.form__inputs-wrapper--first {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+
+  @media (min-width: $tablet_min) {
+    justify-content: space-between;
+    align-items: start;
+    width: fit-content;
+    min-height: 12.75rem;
+  }
+
+  // background-color: rgb(66, 18, 18);
+}
+
+.form__inputs-wrapper--second {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+
+  @media (min-width: $tablet_min) {
+    justify-content: space-between;
+    align-items: start;
+    width: fit-content;
+    min-height: 12.75rem;
+    margin-left: 3.5rem;
+  }
+
+  // background-color: rgb(93, 70, 27);
+}
+
+.form__input-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+
+  @media (min-width: $tablet_min) {
+    align-self: start;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 43.5rem;
+    flex-wrap: nowrap;
+  }
+}
+
+.form__input {
+  width: 100%;
+  height: 3.75rem;
+  border: none;
+  background-color: transparent;
+  color: $text_main_color;
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+  letter-spacing: -0.0375rem;
+  border-bottom: 0.15rem solid $border_first;
+
+  @media (min-width: $tablet_min) {
+    margin: 0;
+    padding: 0;
+    max-width: 31.375rem;
+    font-size: 2.125rem;
+    line-height: 2.125rem;
+    letter-spacing: -0.06375rem;
+  }
+
+  &::placeholder {
+    color: $border_first;
+  }
+}
+
+// .form__input-tel {
+//   @media (min-width: $tablet_min) {
+//     &::placeholder {
+//       content: "+7 (___) ___-____.";
+//     }
+//   }
+// }
+
+.form__label {
+  display: none;
+
+  @media (min-width: $tablet_min) {
+    display: block;
+    color: $text_main_color;
+    font-size: 2.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 2.125rem */
+    letter-spacing: -0.06375rem;
+  }
+}
+
+.form__block {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 1.9rem;
+
+  @media (min-width: $tablet_min) {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-top: 0;
+  }
+  // background-color: yellowgreen;
+}
+
+.form__submit {
+  align-self: center;
+  width: 100%;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 0.75rem;
+  background: $bg_button_color_second;
+  min-width: 15rem;
+  border: none;
+
+  @media (min-width: $tablet_min) {
+    align-self: start;
+    width: 22.5rem;
+    // height: 2.56rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    letter-spacing: -0.045rem;
+    border-radius: 0.75rem;
+    background-color: $btn_desk_form;
+  }
+
+  p {
+    display: block;
+    // width: fit-content;
+    margin: 0;
+    padding: 0;
+    font-size: 0.875rem;
+    font-weight: 600;
+    letter-spacing: -0.0375rem;
+    color: $text_third_color;
+    @media (min-width: $tablet_min) {
+      font-size: 1.5rem;
+      letter-spacing: -0.12rem;
+    }
+    // background-color: red;
+  }
+
+  .form__submit-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 1.3rem;
+    height: 1.3rem;
+    border-radius: 50%;
+    background-color: $text_third_color;
+
+    @media (min-width: $tablet_min) {
+      width: 2.56rem;
+      height: 2.56rem;
+    }
+
+    & span:first-child {
+      position: relative;
+      display: block;
+      width: 1rem;
+      height: 0.125rem;
+      background-color: $bg_second_color;
+      // background-color: red;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: -0.4375rem;
+        left: 0.4375rem;
+        width: 0.125rem;
+        height: 1rem;
+        background-color: $bg_second_color;
+      }
+    }
+  }
+}
+
+.form__checked {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+
+  input {
+    border-radius: 50%;
+  }
+
+  @media (min-width: $tablet_min) {
+  }
+}
+
+/* прячем input checkbox */
+.form__checked input[type="checkbox"] {
+  display: none;
+}
+
+/* стили для метки */
+.form__checked label {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  color: $text_second_color;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 400;
+
+  @media (min-width: $tablet_min) {
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.6875rem;
+    letter-spacing: -0.03375rem;
+  }
+  span {
+    width: 11.875rem;
+
+    @media (min-width: $tablet_min) {
+      width: 12.875rem;
+    }
+  }
+}
+
+/* формируем внешний вид чекбокса в псевдоэлементе before */
+.form__checked label:before {
+  content: "";
+
+  color: #000;
+  display: inline-block;
+  // font: 20px/30px Arial;
+  margin-right: 15px;
+  position: relative;
+  text-align: center;
+  text-indent: 0px;
+  width: 1.125rem;
+  height: 1.125rem;
+  border-image: initial;
+  vertical-align: middle;
+  border-radius: 50%;
+  background-image: url("../images/icon-checkbox.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+
+  @media (min-width: $tablet_min) {
+    width: 2.125rem;
+    height: 2.125rem;
+  }
+}
+
+/* вариации внешнего вида в зав-ти от статуса checkbox */
+/* checked */
+.form__checked input:checked + label:before {
+  content: "";
+  background-image: url("../images/icon-checkbox-on.svg");
+}
+
+/* disabled */
+.form__checked input:disabled + label:before {
+  background: red;
+}
+
+// .contacts {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: start;
+//   align-items: center;
+//   min-width: 288px;
+//   min-height: 169px;
+//   width: 91vw;
+// }
+
+// .contacts h2 {
+//   align-self: start;
+// }
+
+// .contacts__mail {
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: space-between;
+//   align-items: center;
+//   flex-wrap: wrap;
+//   min-width: 254px;
+//   margin-top: 30px;
+// }
+
+// .contacts a {
+//   min-height: 20px;
+//   padding-left: 52px;
+//   font-size: 18px;
+//   line-height: 18px;
+//   font-weight: 400;
+//   text-align: center;
+//   color: $text_main_color;
+//   margin: 0;
+//   background-image: url("../img/icon-mail.svg");
+//   background-repeat: no-repeat;
+//   background-position: left center;
+
+//   &:hover {
+//     opacity: 0.7;
+//   }
+// }
