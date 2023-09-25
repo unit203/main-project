@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Сайт ADRASTEIA</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link rel="stylesheet" href="css/style.min.css">
   <!-- <link href="fonts/opensanslight.woff2" rel="preload" as="font" crossorigin="anonymous">
   <link href="fonts/opensans.woff2" rel="preload" as="font" crossorigin="anonymous">
@@ -112,6 +114,39 @@
     </section>
 
 
+
+    <!-- <section class="services container-fluid">
+
+    </section> -->
+    
+    <section class="services container-fluid">
+      <div class="services__header">
+        <div class="services__heading">
+          Услуги
+        </div>
+        <div class="services__header-text">
+          <p>Когда другие бессильны - мы делаем</p>
+        </div>
+        <div class="services__button-place">
+          <button class="services__btn services__btn-prev" aria-label="Previous" type="button" style="">Previous</button>
+          <button class="services__btn services__btn-next" aria-label="Next" type="button" style="">Next</button>
+        </div>
+      </div>
+
+
+
+
+
+
+      <div class="services__slider services__multiple-items">
+        <div class="services__item">1</div>
+        <div class="services__item">2</div>
+        <div class="services__item">3</div>
+        <div class="services__item">4</div>
+        <div class="services__item">5</div>
+        <div class="services__item">6</div>
+      </div>
+    </section>
 
 
 
@@ -289,7 +324,77 @@
     </section> -->
   </footer>
   <!-- <script src="js/bundle.js"></script> -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  
   <script src="js/app.min.js"></script>
 
+
+  <script>
+    // $(document).ready(function(){
+    //   $('.your-class').slick({
+    //     setting-name: setting-value
+    //   });
+    // });
+  </script>
+
+  <script>
+//     $('.your-class').slick({
+//   slidesToShow: 4,
+//   slidesToScroll: 4
+// });
+
+// var filtered = false;
+
+// $('.js-filter').on('click', function(){
+//   if (filtered === false) {
+//     $('.filtering').slick('slickFilter',':even');
+//     $(this).text('Unfilter Slides');
+//     filtered = true;
+//   } else {
+//     $('.filtering').slick('slickUnfilter');
+//     $(this).text('Filter Slides');
+//     filtered = false;
+//   }
+// });
+
+
+$('.services__multiple-items').slick({
+      infinite: true,
+      dots: false,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      draggable: true,
+      // arrows: true,
+      nextArrow: document.querySelector('.services__btn-next'),
+      prevArrow: document.querySelector('.services__btn-prev'),
+
+
+
+      responsive: [
+	    {
+	      breakpoint: 768,
+	      settings: {
+	        slidesToShow: 4,
+	      }
+	    },
+	    {
+	      breakpoint: 700,
+	      settings: {
+	        slidesToShow: 1,
+	      }
+	    }
+    ]
+    });
+
+    $('.slick-next').slick('slickNext');
+    $('.slick-prev').slick('slick-prev');
+  </script>
 </body>
 </html>

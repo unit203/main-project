@@ -66,4 +66,6 @@
 // });
 
 import "./castom/close-menu.js";
+// import "./castom/services.js";
+import "./castom/slick.js";
 
