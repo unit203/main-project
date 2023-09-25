@@ -68,6 +68,7 @@ html {
 body {
   width: 100%;
   font-family: "gilroy", "Arial", sans-serif;
+  color: #F46A0F;
   font-weight: 400;
   margin: 0;
 }
@@ -500,6 +501,14 @@ input[type=radio].visually_hidden {
   background-color: #000000;
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+}
+
 .form {
   display: flex;
   flex-direction: column;
@@ -785,6 +794,184 @@ input[type=radio].visually_hidden {
 /* disabled */
 .form__checked input:disabled + label:before {
   background: red;
+}
+
+.our-work {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  min-width: 20.9rem;
+}
+@media (min-width: 768px) {
+  .our-work {
+    width: 100%;
+    padding: 3rem;
+    background-image: url("../images/bg-our-work-desk.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 100%;
+  }
+}
+
+.our-work__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .our-work__header {
+    align-items: start;
+    margin-bottom: 4.38rem;
+  }
+}
+
+.our-work__heading {
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 2.125rem;
+  letter-spacing: -0.1rem;
+}
+@media (min-width: 768px) {
+  .our-work__heading {
+    width: 30rem;
+    margin: 0;
+    font-size: 5.25rem;
+    font-weight: 400;
+    line-height: 5.25rem;
+    letter-spacing: -0.21rem;
+  }
+}
+
+.our-work__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .our-work__body {
+    align-self: start;
+    width: 29rem;
+  }
+}
+
+.our-work__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 0.625rem;
+  padding: 0.625rem;
+  min-height: 8.38rem;
+  border-radius: 0.625rem;
+  border: 1px solid #DDE0E9;
+  background-color: #28262B;
+}
+@media (min-width: 768px) {
+  .our-work__item {
+    width: 28.375rem;
+    min-height: 10.3125rem;
+    padding: 1.25rem;
+  }
+}
+
+.our-work__item-header {
+  align-self: flex-end;
+  text-align: right;
+  font-size: 0.75rem;
+  line-height: 0.75rem;
+  font-weight: 400;
+  letter-spacing: -0.0225rem;
+  color: #DDE0E9;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .our-work__item-header {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+    letter-spacing: -0.0375rem;
+  }
+}
+
+.our-work__item-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 18rem;
+}
+@media (min-width: 768px) {
+  .our-work__item-body {
+    flex-direction: column;
+    width: 23.375rem;
+  }
+}
+
+.our-work__item-img {
+  min-width: 5.2rem;
+  height: 5.96rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+@media (min-width: 768px) {
+  .our-work__item-img {
+    align-self: start;
+    min-width: 3rem;
+    height: 3rem;
+  }
+}
+.our-work__item-img--1 {
+  background-image: url("../images/our-work-1.svg");
+}
+@media (min-width: 768px) {
+  .our-work__item-img--1 {
+    background-image: url("../images/our-work-1-desk.svg");
+  }
+}
+.our-work__item-img--2 {
+  background-image: url("../images/our-work-2.svg");
+}
+@media (min-width: 768px) {
+  .our-work__item-img--2 {
+    background-image: url("../images/our-work-2-desk.svg");
+  }
+}
+.our-work__item-img--3 {
+  background-image: url("../images/our-work-3.svg");
+}
+@media (min-width: 768px) {
+  .our-work__item-img--3 {
+    background-image: url("../images/our-work-3-desk.svg");
+  }
+}
+
+.our-work__item-text {
+  width: 9rem;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  letter-spacing: -0.0375rem;
+}
+@media (min-width: 768px) {
+  .our-work__item-text {
+    margin-top: 2.15rem;
+    width: 100%;
+    font-size: 1.875rem;
+    font-weight: 400;
+    line-height: 2.25rem;
+    letter-spacing: -0.05625rem;
+  }
 }
 
 .footer {
