@@ -8,6 +8,11 @@
   padding: 1.2rem;
   // background-color: $bg_second_color;
   // background-color: rgb(8, 77, 63);
+  background-color: $bg_second_color;
+
+  @media (min-width: $tablet_min) {
+    margin-top: 10rem;
+  }
 }
 
 .footer__wrapper {

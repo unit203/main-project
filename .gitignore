@@ -12,7 +12,7 @@ notes.txt
 .run
 notes.md
 READMEALL.md
-README.md
+# README.md
 node_modules/
 # tasks/
 # config/
@@ -20,3 +20,5 @@ node_modules/
 # webpack.config.js
 # package.json
 # src/
+index-old.html
+.gitignore

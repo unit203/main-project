@@ -4,10 +4,16 @@
   // justify-content: start;
   // align-items: center;
   // flex-wrap: wrap;
-  background-color: $bg_third_color;
+  // background-color: $bg_third_color;
+  background-color: $bg_second_color;
   padding: 1.88rem 1.25rem;
   border-radius: 1.875rem;
   width: 100%;
+
+  @media (min-width: $tablet_max) {
+    margin-top: 10rem;
+    background-color: $bg_second_color;
+  }
 }
 
 .services__header {
@@ -18,11 +24,11 @@
   flex-wrap: wrap;
   width: 100%;
 
-
-
-
-  background-color: blue;
-
+  @media (min-width: $tablet_max) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .services__heading {
@@ -53,22 +59,31 @@
   align-self: center;
 }
 
-
-
 .services__btn {
-  width: 100px;
-  height: 100px;
   width: 10rem;
   height: 3rem;
   margin: 0;
+  padding: 1.5rem;
   border: none;
+  background-color: $bg_main_color;
+  background-image: url(../images/our-work-1-desk.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-left: 1px solid $bg_third_color;
+
+  @media (min-width: 618px) {
+    width: 18rem;
+    padding: 2.5rem;
+  }
 }
 
 .services__btn-prev {
   // border-right: 50%;
-border-top-left-radius: 6.25rem;
-border-bottom-left-radius: 6.25rem;
-
+  // border-top-left-radius: 6.25rem;
+  // border-bottom-left-radius: 6.25rem;
+  border-top-right-radius: 6.25rem;
+  border-bottom-right-radius: 6.25rem;
+  transform: rotate(180deg);
 }
 
 .services__btn-next {
@@ -77,31 +92,152 @@ border-bottom-left-radius: 6.25rem;
 }
 
 .services__slider {
-  
   margin-top: 1.25rem;
+
+  @media (min-width: $tablet_max) {
+
+  }
 }
 
-.services__item {
-  display: flex;
+.services__slider .services__item {
+  align-self: center;
+  display: flex !important;
   flex-direction: column;
   justify-content: start;
   align-items: center;
   flex-wrap: wrap;
-
-  height: 100px;
-
+  min-height: 26rem;
+  max-width: 29rem;
+  padding: 0.62rem;
   text-align: center;
+  border-radius: 1.875rem;
+  background-color: $bg_main_color;
 
-  border: 2px solid red;
+  @media (min-width: 475px) {
+    // max-width: 27.25rem;
+    // margin-left: 3.5rem;
+  }
 
-  background-color: rgb(10, 50, 6);
+  @media (min-width: 600px) {
+    max-width: 19rem;
+    // min-height: 32rem;
+    // margin-left: 1.6rem;
+  }
+
+  @media (min-width: $tablet_min) {
+    max-width: 29rem;
+  }
+
+  @media (min-width: $tablet_max) {
+    max-width: 26rem;
+    min-height: 32rem;
+    margin-left: 1.6rem;
+  }
 }
 
+.services__item-header {
+  width: 19rem;
+  height: 12rem;
+  border-radius: 1.5625rem;
+  background-color: $bg_third_color;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right 50%;
 
+  @media (min-width: $mobile_step-1) {
+    width: 16rem;
+    
+  }
 
+  @media (min-width: $tablet_max) {
+    // max-width: 26rem;
+    // min-height: 32rem;
+    // margin-left: 1.6rem;
+  }
 
+  &--1 {
+    background-image: url("../images/services/s-1.png");
+  }
 
+  &--2 {
+    background-image: url("../images/services/s-2.png");
+  }
 
+  &--3 {
+    background-image: url("../images/services/s-3.png");
+  }
 
+  &--4 {
+    background-image: url("../images/services/s-4.png");
+    background-position: 50% 50%;
+  }
 
+  &--5 {
+    background-image: url("../images/services/s-5.png");
+    background-position: 50% 50%;
+  }
 
+  &--6 {
+    background-image: url("../images/services/s-6.png");
+    background-position: 50% 50%;
+  }
+}
+
+.services__item-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  flex-wrap: wrap;
+
+  background-color: $bg_main_color;
+  margin-top: 1.9rem;
+
+  h2 {
+    // margin: 1.9rem 0 0 0;
+    margin: 0;
+    // padding: 1.87rem;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.125rem;
+    letter-spacing: -0.05rem;
+    text-align: left;
+
+    @media (min-width: $tablet_max) {
+      max-width: 16.75rem;
+    }
+  }
+
+  ul {
+    margin: 1.87rem 0 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin: 0;
+    padding: 0;
+    max-width: 15rem;
+    text-align: left;
+
+    @media (min-width: $tablet_max) {
+      max-width: 18rem;
+    }
+    // list-style-type: square;
+
+    p {
+      margin: 0 0 0 0.43rem;
+      padding: 0;
+      font-size: 0.875rem;
+      font-weight: 400;
+      line-height: 0.875rem;
+      letter-spacing: -0.035rem;
+      text-align-last: left;
+    }
+  }
+}

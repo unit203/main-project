@@ -10,11 +10,15 @@
   @media (min-width: $tablet_min) {
     width: 100%;
     padding: 3rem;
+    margin-top: 10rem;
     background-image: url("../images/bg-our-work-desk.svg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position-x: 100%;
   }
+
+
+  
 }
 
 .our-work__header {
