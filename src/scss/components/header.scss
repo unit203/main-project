@@ -7,12 +7,9 @@
   justify-content: start;
   align-items: center;
   background-color: $bg_main_color;
-  // background-color: rgb(3, 33, 3);
 
   @media (min-width: $tablet_min) {
     border-bottom: 1px solid $text_main_color;
-    // min-height: 50px;
-    // margin: 0 0 10px -10px;
   }
 }
 

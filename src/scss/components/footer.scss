@@ -6,8 +6,6 @@
   flex-wrap: wrap;
   width: 100%;
   padding: 1.2rem;
-  // background-color: $bg_second_color;
-  // background-color: rgb(8, 77, 63);
   background-color: $bg_second_color;
 
   @media (min-width: $tablet_min) {
@@ -22,8 +20,6 @@
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
-
-  // background-color: #073908;
 }
 
 .footer__body {
@@ -33,8 +29,6 @@
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
-
-  // background-color: #232309;
 
   @media (min-width: $tablet_min) {
     align-items: flex-start;
@@ -46,7 +40,7 @@
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  
+
   @media (min-width: $tablet_min) {
     align-self: flex-start;
   }
@@ -66,8 +60,6 @@
   @media (min-width: $tablet_min) {
     width: 20rem;
   }
-
-  // background-color: lightgreen;
 }
 
 .footer__info {
@@ -78,54 +70,45 @@
   flex-wrap: wrap;
   width: 100%;
 
-
-  border-top: .0625rem solid $border_first;
-
+  border-top: 0.0625rem solid $border_first;
 
   @media (min-width: $tablet_min) {
     flex-direction: row;
     justify-content: space-between;
     min-height: 11.9375rem;
   }
-  // background-color: rgb(85, 61, 15);
 }
-
 
 .footer__info-first {
   display: none;
 
   @media (min-width: $tablet_min) {
-display: block;
-// background-color: #232309;
+    display: block;
   }
 }
 
-
 .footer__info-second {
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-align-items: center;
-flex-wrap: wrap;
-width: 100%;
-min-height: 5.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  min-height: 5.5rem;
   color: $text_second_color;
-
-font-size: 0.75rem;
-
-font-weight: 600;
-line-height: 0.975rem;
-letter-spacing: -0.015rem;
-
-
-@media (min-width: $tablet_min) {
-  width: 56.875rem;
-  font-size: 1.25rem;
-  font-style: normal;
+  font-size: 0.75rem;
   font-weight: 600;
-  line-height: 1.25rem;
-  letter-spacing: -0.05rem;
-}
+  line-height: 0.975rem;
+  letter-spacing: -0.015rem;
+
+  @media (min-width: $tablet_min) {
+    width: 56.875rem;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.25rem;
+    letter-spacing: -0.05rem;
+  }
 }
 
 .footer__info-link {
@@ -135,8 +118,8 @@ letter-spacing: -0.015rem;
     color: $text_third_color;
   }
 
-    @media (min-width: $tablet_min) {
-      width: 22rem;
+  @media (min-width: $tablet_min) {
+    width: 22rem;
   }
 }
 
@@ -145,179 +128,6 @@ letter-spacing: -0.015rem;
     text-decoration: none;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .footer__info-contact-place {
   display: flex;
@@ -328,7 +138,6 @@ letter-spacing: -0.015rem;
   min-width: 20.9375rem;
   height: 3.25rem;
   padding: 1rem 1.3125rem;
-  // margin-top: 50px;
   border: 1px solid $border_first;
   border-radius: 6.25rem;
 
@@ -336,7 +145,6 @@ letter-spacing: -0.015rem;
     width: 53.1875rem;
     height: 5.875rem;
   }
-  // background-color: red;
 }
 
 .footer__info-contact-place-link {
@@ -346,35 +154,26 @@ letter-spacing: -0.015rem;
   align-items: center;
   flex-wrap: wrap;
   min-height: 1.25rem;
-  font-size: .75rem;
+  font-size: 0.75rem;
   color: $text_main_color;
   background-repeat: no-repeat;
   background-position: left center;
 
   @media (min-width: $tablet_min) {
-
-
-    color: #F46A0F;
-
-font-size: 2.125rem;
-font-style: normal;
-font-weight: 700;
-line-height:2.125rem;
-letter-spacing: -0.06375rem;
-text-transform: lowercase;
-
-background-size: contain;
-
+    color: $border_second;
+    font-size: 2.125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.125rem;
+    letter-spacing: -0.06375rem;
+    text-transform: lowercase;
+    background-size: contain;
   }
 }
 
-
 .footer__info-contact-place-whatsapp {
   padding-left: 1.75rem;
-  // color: $text_third_color;
-  // background-color: black;
   background-image: url(/images/icon-whatsapp-nav.svg);
-  // background-image: url(/img/icon-arrow.svg);
 
   @media (min-width: $tablet_min) {
     padding-left: 3.125rem;
@@ -383,8 +182,6 @@ background-size: contain;
 
 .footer__info-contact-place-telegram {
   padding-left: 1.75rem;
-  // color: $text_third_color;
-  // background-color: black;
   background-image: url(/images/icon-telegram-nav.svg);
 
   @media (min-width: $tablet_min) {
@@ -392,58 +189,11 @@ background-size: contain;
   }
 }
 
+
 .footer__info-contact-place-email {
   color: $text_third_color;
 
   @media (min-width: $tablet_min) {
-text-decoration: underline;
+    text-decoration: underline;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

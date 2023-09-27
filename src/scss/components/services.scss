@@ -1,10 +1,4 @@
 .services {
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: start;
-  // align-items: center;
-  // flex-wrap: wrap;
-  // background-color: $bg_third_color;
   background-color: $bg_second_color;
   padding: 1.88rem 1.25rem;
   border-radius: 1.875rem;
@@ -32,7 +26,6 @@
 }
 
 .services__heading {
-  // margin-top: 1.25rem;
   font-size: 2.5rem;
   font-weight: 400;
   line-height: 2.125rem;
@@ -66,7 +59,7 @@
   padding: 1.5rem;
   border: none;
   background-color: $bg_main_color;
-  background-image: url(../images/our-work-1-desk.svg);
+  background-image: url(/images/our-work-1-desk.svg);
   background-repeat: no-repeat;
   background-position: center center;
   border-left: 1px solid $bg_third_color;
@@ -78,9 +71,6 @@
 }
 
 .services__btn-prev {
-  // border-right: 50%;
-  // border-top-left-radius: 6.25rem;
-  // border-bottom-left-radius: 6.25rem;
   border-top-right-radius: 6.25rem;
   border-bottom-right-radius: 6.25rem;
   transform: rotate(180deg);
@@ -113,15 +103,8 @@
   border-radius: 1.875rem;
   background-color: $bg_main_color;
 
-  @media (min-width: 475px) {
-    // max-width: 27.25rem;
-    // margin-left: 3.5rem;
-  }
-
   @media (min-width: 600px) {
     max-width: 19rem;
-    // min-height: 32rem;
-    // margin-left: 1.6rem;
   }
 
   @media (min-width: $tablet_min) {
@@ -146,39 +129,32 @@
 
   @media (min-width: $mobile_step-1) {
     width: 16rem;
-    
-  }
-
-  @media (min-width: $tablet_max) {
-    // max-width: 26rem;
-    // min-height: 32rem;
-    // margin-left: 1.6rem;
   }
 
   &--1 {
-    background-image: url("../images/services/s-1.png");
+    background-image: url("/images/services/s-1.png");
   }
 
   &--2 {
-    background-image: url("../images/services/s-2.png");
+    background-image: url("/images/services/s-2.png");
   }
 
   &--3 {
-    background-image: url("../images/services/s-3.png");
+    background-image: url("/images/services/s-3.png");
   }
 
   &--4 {
-    background-image: url("../images/services/s-4.png");
+    background-image: url("/images/services/s-4.png");
     background-position: 50% 50%;
   }
 
   &--5 {
-    background-image: url("../images/services/s-5.png");
+    background-image: url("/images/services/s-5.png");
     background-position: 50% 50%;
   }
 
   &--6 {
-    background-image: url("../images/services/s-6.png");
+    background-image: url("/images/services/s-6.png");
     background-position: 50% 50%;
   }
 }
@@ -194,9 +170,7 @@
   margin-top: 1.9rem;
 
   h2 {
-    // margin: 1.9rem 0 0 0;
     margin: 0;
-    // padding: 1.87rem;
     font-size: 1.25rem;
     font-weight: 400;
     line-height: 1.125rem;
@@ -228,7 +202,6 @@
     @media (min-width: $tablet_max) {
       max-width: 18rem;
     }
-    // list-style-type: square;
 
     p {
       margin: 0 0 0 0.43rem;

@@ -23,6 +23,7 @@ const handleSCSS = scss.bind(null, isBuild);
 const handleJS = javaScript.bind(null, !isBuild);
 const handleImages = images.bind(null, isBuild);
 
+
 /**
  * Наблюдатель за изменениями в файлах
  */

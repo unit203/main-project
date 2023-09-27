@@ -1,7 +1,7 @@
 {
-  "name": "gulp-2022",
+  "name": "main-project",
   "version": "1.7.8",
-  "description": "Сборка",
+  "description": "Сборка main-project",
   "main": "gulpfile.js",
   "type": "module",
   "scripts": {

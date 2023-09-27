@@ -772,7 +772,7 @@ input[type=radio].visually_hidden {
   border-image: initial;
   vertical-align: middle;
   border-radius: 50%;
-  background-image: url("../images/icon-checkbox.svg");
+  background-image: url(/images/icon-checkbox.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: contain;
@@ -788,7 +788,7 @@ input[type=radio].visually_hidden {
 /* checked */
 .form__checked input:checked + label:before {
   content: "";
-  background-image: url("../images/icon-checkbox-on.svg");
+  background-image: url(/images/icon-checkbox-on.svg);
 }
 
 /* disabled */
@@ -1038,7 +1038,7 @@ input[type=radio].visually_hidden {
   padding: 1.5rem;
   border: none;
   background-color: #28262B;
-  background-image: url(../images/our-work-1-desk.svg);
+  background-image: url(/images/our-work-1-desk.svg);
   background-repeat: no-repeat;
   background-position: center center;
   border-left: 1px solid #F3F6F9;
@@ -1111,24 +1111,24 @@ input[type=radio].visually_hidden {
   }
 }
 .services__item-header--1 {
-  background-image: url("../images/services/s-1.png");
+  background-image: url("/images/services/s-1.png");
 }
 .services__item-header--2 {
-  background-image: url("../images/services/s-2.png");
+  background-image: url("/images/services/s-2.png");
 }
 .services__item-header--3 {
-  background-image: url("../images/services/s-3.png");
+  background-image: url("/images/services/s-3.png");
 }
 .services__item-header--4 {
-  background-image: url("../images/services/s-4.png");
+  background-image: url("/images/services/s-4.png");
   background-position: 50% 50%;
 }
 .services__item-header--5 {
-  background-image: url("../images/services/s-5.png");
+  background-image: url("/images/services/s-5.png");
   background-position: 50% 50%;
 }
 .services__item-header--6 {
-  background-image: url("../images/services/s-6.png");
+  background-image: url("/images/services/s-6.png");
   background-position: 50% 50%;
 }
 
@@ -1279,10 +1279,6 @@ input[type=radio].visually_hidden {
 }
 
 /* Slider */
-.slick-loading .slick-list {
-  background: #fff url("./ajax-loader.gif") center center no-repeat;
-}
-
 /* Icons */
 @font-face {
   font-family: "slick";

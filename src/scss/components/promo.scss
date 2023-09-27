@@ -9,15 +9,7 @@
     display: grid;
     grid-template-rows: 27rem 23rem 4rem;
     grid-template-columns: 45rem 7rem 67rem;
-    // grid-row:  / ;
-    // grid-column:  / ;
   }
-
-
-
-
-  // padding: 20px;
-  // background-color: darkblue;
 }
 
 .promo__wrapper-first {
@@ -26,9 +18,7 @@
   @media (min-width: $tablet_min) {
     grid-row: 1 / 2;
     grid-column: 1 / 3;
-
     padding: 3.15rem;
-    
   }
 }
 
@@ -81,19 +71,12 @@
   }
 }
 
-
 .promo__image {
   width: 100%;
   height: 20.5rem;
   background-image: url(../images/bg-promo-mob.png);
   background-repeat: no-repeat;
-  // background-position: -5.2875rem -4.4625rem;
-  // background-size: 178.9%;
   background-size: contain;
-  // background-position-x: center;
-  // background-position-y: -49px;
-
-  // background-color: darkslategray;
 
   @media (min-width: $tablet_min) {
     grid-row: 1 / 3;
@@ -102,7 +85,6 @@
     height: 100%;
     background-size: 135%;
     background-position: 0.1rem -6.875rem;
-    // background-color: rgba(21, 255, 0, 0.304);
   }
 }
 
@@ -113,18 +95,12 @@
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
-
-  // background-color: orange;
 }
 
 .promo__button {
-  // display: none;
   align-self: center;
-  // @media (min-width: $tablet_min) {
   width: 100%;
   padding: 1.25rem;
-  // margin: 20px 0 0 0;
-  
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -140,16 +116,15 @@
     height: 5.56rem;
     margin-left: 3.13rem;
     padding: 1.5rem;
-    border-radius: .75rem;
+    border-radius: 0.75rem;
     background-color: $bg_button_color_first;
   }
 
   p {
     display: block;
-    // width: fit-content;
     margin: 0;
     padding: 0;
-    font-size: .875rem;
+    font-size: 0.875rem;
     font-weight: 600;
     letter-spacing: -0.0375rem;
     color: $text_third_color;
@@ -158,9 +133,7 @@
       font-size: 1.5rem;
       letter-spacing: -0.12rem;
     }
-    
   }
-  // }
 
   .promo__button-img {
     display: flex;
@@ -172,22 +145,20 @@
     height: 2.1875rem;
     border-radius: 50%;
     background-color: $text_third_color;
-    // background-color: red;
 
     & span:first-child {
       position: relative;
       display: block;
       width: 1rem;
-      height: .125rem;
+      height: 0.125rem;
       background-color: $bg_second_color;
-      // background-color: red;
 
       &::before {
         content: "";
         position: absolute;
         top: -0.4375rem;
-        left: .4375rem;
-        width: .125rem;
+        left: 0.4375rem;
+        width: 0.125rem;
         height: 1rem;
         background-color: $bg_second_color;
       }

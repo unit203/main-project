@@ -1,11 +1,11 @@
 'use strict';
 
-var mainSwitch = document.querySelector('.main-nav__switch');
-var mainNav = document.querySelector('.main-nav__list');
-var mainNavItems = document.querySelectorAll('.main-nav__item');
+let mainSwitch = document.querySelector('.main-nav__switch');
+let mainNav = document.querySelector('.main-nav__list');
+let mainNavItems = document.querySelectorAll('.main-nav__item');
 
-var onActiveMenu = function () {
-  var mainSwitchImg = document.querySelector('.main-nav__switch-img');
+let onActiveMenu = function () {
+  let mainSwitchImg = document.querySelector('.main-nav__switch-img');
 
   if (mainSwitchImg.classList.contains('main-nav__switch-img--open')) {
     mainSwitchImg.classList.remove('main-nav__switch-img--open');
@@ -25,7 +25,7 @@ var onActiveMenu = function () {
 
 mainSwitch.addEventListener('mousedown', onActiveMenu);
 
-var onItemClose = function() {
+let onItemClose = function() {
   mainNavItems.forEach(function (el,index) {
 
     setTimeout(function () {
@@ -35,7 +35,7 @@ var onItemClose = function() {
   })
 }
 
-var onItemOpen = function() {
+let onItemOpen = function() {
   mainNavItems.forEach(function (el,index) {
     setTimeout(function () {
       el.classList.remove('main-nav__item--close');
